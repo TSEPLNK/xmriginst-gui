@@ -37,14 +37,14 @@ canvas = Canvas(
 canvas.place(x = 0, y = 0)
 button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
-button_1 = Button(
+herominers = Button(
     image=button_image_1,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_1 clicked"),
+    command=lambda: print("herominers"),
     relief="flat"
 )
-button_1.place(
+herominers.place(
     x=120.0,
     y=174.0,
     width=11.125,
@@ -53,14 +53,14 @@ button_1.place(
 
 button_image_2 = PhotoImage(
     file=relative_to_assets("button_2.png"))
-button_2 = Button(
+monerohash = Button(
     image=button_image_2,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_2 clicked"),
+    command=lambda: print("monerohash"),
     relief="flat"
 )
-button_2.place(
+monerohash.place(
     x=120.0,
     y=156.0,
     width=11.125,
@@ -69,14 +69,14 @@ button_2.place(
 
 button_image_3 = PhotoImage(
     file=relative_to_assets("button_3.png"))
-button_3 = Button(
+xmrfast = Button(
     image=button_image_3,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_3 clicked"),
+    command=lambda: print("xmrfast"),
     relief="flat"
 )
-button_3.place(
+xmrfast.place(
     x=120.0,
     y=138.0,
     width=11.125,
@@ -85,14 +85,14 @@ button_3.place(
 
 button_image_4 = PhotoImage(
     file=relative_to_assets("button_4.png"))
-button_4 = Button(
+xmrpool = Button(
     image=button_image_4,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_4 clicked"),
+    command=lambda: print("xmrpool"),
     relief="flat"
 )
-button_4.place(
+xmrpool.place(
     x=120.0,
     y=120.0,
     width=11.125,
@@ -101,14 +101,14 @@ button_4.place(
 
 button_image_5 = PhotoImage(
     file=relative_to_assets("button_5.png"))
-button_5 = Button(
+supportxmr = Button(
     image=button_image_5,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_5 clicked"),
+    command=lambda: print("supportxmr"),
     relief="flat"
 )
-button_5.place(
+supportxmr.place(
     x=120.0,
     y=102.0,
     width=11.125,
@@ -117,68 +117,75 @@ button_5.place(
 
 button_image_6 = PhotoImage(
     file=relative_to_assets("button_6.png"))
-button_6 = Button(
+install = Button(
     image=button_image_6,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_6 clicked"),
+    command=lambda: print("Install XMRig"),
     relief="flat"
 )
-button_6.place(
+install.place(
     x=320.0,
-    y=156.0,
+    y=160.0,
     width=198.0,
     height=33.0
 )
 
 button_image_7 = PhotoImage(
     file=relative_to_assets("button_7.png"))
-button_7 = Button(
+update = Button(
     image=button_image_7,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_7 clicked"),
+    command=lambda: print("Update XMRig"),
     relief="flat"
 )
-button_7.place(
+update.place(
     x=320.0,
-    y=196.0,
+    y=200.0,
     width=198.0,
     height=33.0
 )
 
 button_image_8 = PhotoImage(
     file=relative_to_assets("button_8.png"))
-button_8 = Button(
+save_u = Button(
     image=button_image_8,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_8 clicked"),
+    command=lambda: print("save_u"),
     relief="flat"
 )
-button_8.place(
+save_u.place(
     x=496.0,
-    y=98.0,
+    y=102.0,
     width=20.0,
     height=11.0
 )
 
 canvas.create_text(
-    235.0,
-    58.0,
-    anchor="nw",
-    text="Welcome to xmriginst.",
-    fill="#000000",
-    font=("Inter SemiBold", 12 * -1)
-)
-
-canvas.create_text(
-    455.0,
+    459.0,
     384.0,
     anchor="nw",
     text="windows_xmriginst v.1.4",
     fill="#000000",
     font=("Inter SemiBold", 12 * -1)
+)
+
+button_image_9 = PhotoImage(
+    file=relative_to_assets("button_9.png"))
+github = Button(
+    image=button_image_9,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("github"),
+    relief="flat"
+)
+github.place(
+    x=558.0,
+    y=368.0,
+    width=42.0,
+    height=16.0
 )
 
 canvas.create_text(
@@ -201,7 +208,7 @@ canvas.create_text(
 
 canvas.create_text(
     320.0,
-    116.0,
+    120.0,
     anchor="nw",
     text="Path to XMRig",
     fill="#000000",
@@ -257,7 +264,7 @@ entry_image_1 = PhotoImage(
     file=relative_to_assets("entry_1.png"))
 entry_bg_1 = canvas.create_image(
     405.0,
-    143.5,
+    147.5,
     image=entry_image_1
 )
 entry_1 = Entry(
@@ -268,7 +275,7 @@ entry_1 = Entry(
 )
 entry_1.place(
     x=320.0,
-    y=138.0,
+    y=142.0,
     width=170.0,
     height=9.0
 )
@@ -277,7 +284,7 @@ entry_image_2 = PhotoImage(
     file=relative_to_assets("entry_2.png"))
 entry_bg_2 = canvas.create_image(
     405.0,
-    103.5,
+    107.5,
     image=entry_image_2
 )
 entry_2 = Entry(
@@ -288,40 +295,40 @@ entry_2 = Entry(
 )
 entry_2.place(
     x=320.0,
-    y=98.0,
+    y=102.0,
     width=170.0,
     height=9.0
 )
 
-button_image_9 = PhotoImage(
-    file=relative_to_assets("button_9.png"))
-button_9 = Button(
-    image=button_image_9,
+button_image_10 = PhotoImage(
+    file=relative_to_assets("button_10.png"))
+save_d = Button(
+    image=button_image_10,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_9 clicked"),
+    command=lambda: print("save_d"),
     relief="flat"
 )
-button_9.place(
+save_d.place(
     x=496.0,
-    y=138.0,
+    y=142.0,
     width=20.0,
     height=11.0
 )
 
 canvas.create_rectangle(
     319.0,
-    109.0,
+    113.0,
     490.0,
-    110.0,
+    114.0,
     fill="#2D3034",
     outline="")
 
 canvas.create_rectangle(
     319.0,
-    149.0,
+    153.0,
     490.0,
-    150.0,
+    154.0,
     fill="#2D3034",
     outline="")
 window.resizable(False, False)
