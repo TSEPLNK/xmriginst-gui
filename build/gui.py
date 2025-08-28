@@ -153,7 +153,7 @@ save_u = Button(
     image=button_image_8,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("save_u"),
+    command=lambda: print (entry_2.get()),
     relief="flat"
 )
 save_u.place(
@@ -306,7 +306,7 @@ save_d = Button(
     image=button_image_10,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("save_d"),
+    command=lambda: print(entry_1.get()),
     relief="flat"
 )
 save_d.place(
